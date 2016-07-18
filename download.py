@@ -9,7 +9,7 @@ for url in open('urls.txt'):
 	if not os.path.exists(filename):
 		print("Downloading"), 
 		print filename
-		outfile = open(filename, "w")
+		outfile = open(filename, "wb")
 		outfile.write(urllib2.urlopen(url).read())
 		outfile.close
 		print("Complete!")
