@@ -17,8 +17,9 @@ python download.py
 Note: If a file already exists, this will skip over it. Delete the file if you 
 find it's corrupted or the transfer failed. 
 
-### Contributors
+## Contributors
 
 - Eric Patrick ([epatr](https://github.com/epatr))
 
-Brought to you by [improvpodcasts.com](http://www.improvpodcasts.com)
+It's obviously a very basic tool, and its uses extend far beyond improv podcasts, 
+so if you have any ideas or want to work together please email improvpodcasts@gmail.com.
