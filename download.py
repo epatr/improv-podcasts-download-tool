@@ -1,7 +1,6 @@
 import os
 import urllib2
 
-
 print("Opening urls.txt...")
 for url in open('urls.txt'): 
 	filename = url.split('/')[-1].rstrip()

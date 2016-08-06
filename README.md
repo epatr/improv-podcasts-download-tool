@@ -1,23 +1,32 @@
 # Improv Podcasts Download Tool
 
-This is a very small Python script to facilitate creating an archive of podcast episodes.
+This tool will allow you to download an entire podcast's archives when given a 
+list of URLs. 
 
+In 2015, Earwolf announced an app called Howl.fm, which was an iPhone-only app 
+that was promised to be the future of Earwolf podcasts. It would cost $5/month 
+and was the best way to support Earwolf. They offered no Android version nor
+support for RSS feeds, so you _had_ to use their iPhone app.
 
-### Why create this?
+Along with the launch of the app was a huge surprise: all Earwolf episodes
+older than 6 months would be removed from Soundcloud and become exclusive to 
+Howl.fm.
 
-In 2015, Howl.fm was announced, which threatened to hide any Earwolf episodes older than 6 months behind a paywall. As a fan of so many podcasts on the Earwolf network, this was a frightening prospect. How.fm launched exclusively as an iPhone app, so I didn't have a great amount of trust in their ability to host their own archives. It's now been a year and there still isn't a way to listen to Howl Premium exclusives in any other program.
+This was obviously horrifying to me, as I'd gotten so many friends into improv
+comedy by showing them old improv4humans episodes. I created this very simple
+script to download all the old episodes and keep them safe from Earwolf's
+(and now E.W. Scripps') mettling hands. 
 
-I created this tool because I don't want these shows to disappear forever.  
+## How to Use
 
-
-## Usage
-
-If you create a flatfile text document with a list of podcast URLs, this tool will download them to your local machine for permanent safe-keeping. 
-
-Simply put your list of files into `urls.txt` and run 
+1. Clone this repo, or simply download `download.py` from the repository above.
+2. Create a file called `urls.txt`. On each line, put the direct download URL 
+for the episode. Use the podcast's RSS feed to get the direct URLs. 
+3. Run the following command in your terminal:
 
 ```sh
-python download
+python download.py
 ```
 
-And sit back as your computer checks if the file exists on your local machine and downloads it if it doesn't.
+Note: If a file already exists, this will skip over it. Delete the file if you 
+find it's corrupted or the transfer failed. 
