@@ -1,4 +1,4 @@
-# Improv Podcasts Download Tool
+# ImprovPodcasts.com Download Tool
 
 This tool will allow you to download an entire podcast's archives when given a 
 list of URLs. 
@@ -16,3 +16,9 @@ python download.py
 
 Note: If a file already exists, this will skip over it. Delete the file if you 
 find it's corrupted or the transfer failed. 
+
+### Contributors
+
+- Eric Patrick ([epatr](https://github.com/epatr))
+
+Brought to you by [improvpodcasts.com](http://www.improvpodcasts.com)
